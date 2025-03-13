@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #8EADD5;
+    --secondary-color: #FFFFFF;
+    --third-color: #284974;
+    --text-primary: #272D38;
+
+    --max-width: 1440px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Inter', 'Noto Sans', sans-serif, system-ui;
+    color: var(--text-primary);
+    background-color: var(--primary-color);
+
+    height: 100%;
+    min-height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template:
+        "header" max-content
+        "main" minmax(max-content, 1fr)
+        "footer" max-content /
+        1fr;
+
+    height: 100%;
+}
+
+.main {
+    grid-area: main;
+
+    width: 100%;
+}
+
+.main-box {
+    height: 100%;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.maxw {
+    padding: 2.25rem 10rem;
+
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
+
+@media (max-width: 860px) {
+    .header-box, .main-box, .footer-box {
+        padding: 2.25rem 2rem;
+    }
+}
