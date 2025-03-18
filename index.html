@@ -6,7 +6,9 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sections.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cards.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
@@ -18,17 +20,17 @@
                 <nav class="nav">
                     <input id="menu-checkbox" class="menu-checkbox" type="checkbox">
                     <label class="menu-icon nav-btn" for="menu-checkbox">
-                        <i class='bx bx-menu'></i>
-                        <!-- <img src="assets/ic/menu.png" alt=""> -->
+                        <!-- <i class='bx bx-menu'></i> -->
+                        <img src="assets/ic/menu.svg" alt="">
                     </label>
                     <ul class="nav-ul">
                         <label class="close-menu-icon nav-btn" for="menu-checkbox">
                             <i class='bx bx-x'></i>
                         </label>
-                        <li><a class="nav-a" href="/">home</a></li>
-                        <li><a class="nav-a" href="/">about</a></li>
-                        <li><a class="nav-a" href="/">testimonials</a></li>
-                        <li><a class="nav-a" href="/">contact</a></li>
+                        <li><a class="nav-link" href="/">home</a></li>
+                        <li><a class="nav-link" href="/">about</a></li>
+                        <li><a class="nav-link" href="/">testimonials</a></li>
+                        <li><a class="nav-link" href="/">contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -36,23 +38,118 @@
         <main class="main">
             <div class="main-box maxw">
                 <section class="section hero-sec">
+                    <!-- Section content -->
+                    <div class="sec-content">
+                        <h2 class="sec-title">
+                            Building Digital Products, Brands & Experience
+                        </h2>
+                        <p>
+                            Digital Agency is your online team mangement tool that easy and prompt
+                        </p>
+                        <a href="" class="sec-link">Contact Us</a>
+                    </div>
+                    <img 
+                        srcset="/assets/business-deal-1.png 364w, /assets/business-deal.png 450w" 
+                        sizes="(max-width: 860px) 364px,
+                                450px"   
+                        src="/assets/business-deal.png" 
+                        alt="section main image"
+                        class="sec-img">
                     <!-- ... -->
-                    Hero Section
                 </section>
                 <section class="section companies-sec">
+                    <!-- Section content -->
+                    <div class="sec-content">
+                        <p>
+                            Trusted by 4,000+ companies
+                        </p>
+                        <ul class="logo-list">
+                            <li class="company-logo">
+                                <img src="/assets/Company logo.png" alt="company logo">
+                            </li>
+                            <li class="company-logo">
+                                <img src="/assets/Company logo-1.png" alt="company logo">
+                            </li>
+                            <li class="company-logo">
+                                <img src="/assets/Company logo-2.png" alt="company logo">
+                            </li>
+                            <li class="company-logo">
+                                <img src="/assets/Company logo-3.png" alt="company logo">
+                            </li>
+                        </ul>
+                    </div>
                     <!-- ... -->
-                    Companies Section
                 </section>
                 <section class="section branding-sec">
+                    <!-- Section content -->
+                    <div class="sec-content">
+                        <h2 class="sec-title">
+                            Branding & Design System
+                        </h2>
+                        <ul class="card-list">
+                            <li class="card">
+                                <div class="card-icon" style="background-color: #FFDED4;">
+                                    <img src="/assets/website-4943 1.png" alt="service icon" class="icon-img">
+                                </div>
+                                <h4 class="card-title">WEBSITE DESIGN</h4>
+                                <p class="card-description">
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                </p>
+                            </li>
+                            <li class="card">
+                                <div class="card-icon">
+                                    <img src="/assets/LOGO2.png" alt="service icon" class="icon-img">
+                                </div>
+                                <h4 class="card-title">WEB DEVELOPMENT</h4>
+                                <p class="card-description">
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                </p>
+                            </li>
+                            <li class="card">
+                                <div class="card-icon" style="background-color:#D4F0FF;">
+                                    <img src="/assets/mobile-phone-1164 1.png" alt="service icon" class="icon-img">
+                                </div>
+                                <h4 class="card-title">MOBILE APP  DEVELOPMENT</h4>
+                                <p class="card-description">
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
                     <!-- ... -->
-                    Branding Section
                 </section>
                 <section class="section custom-sec">
+                    <!-- Section content -->
+                    <div class="sec-content">
+                        <h2 class="sec-title">
+                            Custome & Plugin Development
+                        </h2>
+                        <p>
+                            Commonly used in the graphic, print & publishing industris for previewing visual layout and mockups
+                        </p>
+                    </div>
+                    <img 
+                        srcset="/assets/businessman-analyzing-data-1.png 380w, /assets/businessman-analyzing-data.png 450w" 
+                        sizes="(max-width: 860px) 380px,
+                                450px"   
+                        src="/assets/business-deal.png" 
+                        alt="section main image"
+                        class="sec-img">
                     <!-- ... -->
                 </section>
                 <section class="section contact-sec">
+                    <!-- Section content -->
+                    <div class="sec-content">
+                        <h2 class="sec-title">
+                            Be a part of the next big thing
+                        </h2>
+                        <p>
+                            We work with Brans, Startups, to SMEs. Colaborate for more impact and growt
+                        </p>
+                        <a href="" class="sec-link">Contact Us</a>
+                    </div>
+                    <img src="/assets/customer-support.png" alt="section main image" class="sec-img">
                     <!-- ... -->
-                    Contact Section
                 </section>
             </div>
         </main>
@@ -65,28 +162,29 @@
                 <div class="footer-item">
                     <h4 class="footer-item-title">Resources</h4>
                     <ul class="footer-item-list">
-                        <li class="footer-list-element">Guides</li>
-                        <li class="footer-list-element">Blog</li>
-                        <li class="footer-list-element">Customer Stories</li>
-                        <li class="footer-list-element">Glossery</li>
+                        <a href="#" class="footer-links"><li class="footer-list-element">Guides</li></a>
+                        <a href="#" class="footer-links"><li class="footer-list-element">Blog</li></a>
+                        <a href="#" class="footer-links"><li class="footer-list-element">Customer Stories</li></a>
+                        <a href="#" class="footer-links"><li class="footer-list-element">Glossery</li></a>
                     </ul>
                 </div>
                 <div class="footer-item">
                     <h4 class="footer-item-title">Company</h4>
                     <ul class="footer-item-list">
-                        <li class="footer-list-element">About Us</li>
-                        <li class="footer-list-element">Career</li>
-                        <li class="footer-list-element">Partners</li>
-                        <li class="footer-list-element">Glossery</li>
+                        <a href="#" class="footer-links"><li class="footer-list-element">About Us</li></a>
+                        <a href="#" class="footer-links"><li class="footer-list-element">Career</li></a>
+                        <a href="#" class="footer-links"><li class="footer-list-element">Partners</li></a>
+                        <a href="#" class="footer-links"><li class="footer-list-element">Contact Us</li></a>
                     </ul>
+                    <a href=""></a>
                 </div>
                 <div class="footer-item">
                     <h4 class="footer-item-title">Social Media</h4>
                     <ul class="footer-item-list">
-                        <li class="footer-list-element">LinkedIn</li>
-                        <li class="footer-list-element">Facebook</li>
-                        <li class="footer-list-element">Instagram</li>
-                        <li class="footer-list-element">Twitter</li>
+                        <a href="#" class="footer-links"><li class="footer-list-element">LinkedIn</li></a>
+                        <a href="#" class="footer-links"><li class="footer-list-element">Facebook</li></a>
+                        <a href="#" class="footer-links"><li class="footer-list-element">Instagram</li></a>
+                        <a href="#" class="footer-links"><li class="footer-list-element">Twitter</li></a>
                     </ul>
                 </div>
                 <!-- ... -->

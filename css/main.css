@@ -11,6 +11,8 @@
     --secondary-color: #ffffff;
     --third-color: #284974;
     --text-primary: #272D38;
+    --text-secondary: #CFDCED;
+    --text-third: #667085;
 
     --max-width: 1440px;
 }
@@ -32,7 +34,7 @@ body {
     display: grid;
     grid-template:
         "header" max-content
-        "main" minmax(max-content, 1fr)
+        "main" 1fr
         "footer" max-content /
         1fr;
 
@@ -47,6 +49,10 @@ body {
 
 .main-box {
     height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer {
@@ -61,7 +67,7 @@ body {
 }
 
 @media (max-width: 860px) {
-    .header-box, .main-box, .footer-box {
-        padding: 2.25rem 2rem;
+    .maxw {
+        padding: 2.25rem 1.5rem;
     }
 }

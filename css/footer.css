@@ -28,7 +28,16 @@
     padding: 10px 0px 10px 0px;
 }
 
-@media only screen and (max-width:680px){
+.footer-links{
+    text-decoration: none;
+    color: var(--text-primary)
+}
+.footer-links:hover{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 860px){
     .footer-box{
         display: flex;
         flex-direction: column;
@@ -41,5 +50,9 @@
         display: flex;
         flex-direction: column;
         padding: 0px 0px 60px 0px;
+    }
+
+    .footer-links{
+        color: var(--secondary-color)
     }
 }
